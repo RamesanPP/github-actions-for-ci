@@ -3,3 +3,8 @@ on: pull_request_review
 jobs:
   labelWhenApproved:
     runs-on: ubuntu-latest
+    env:
+      APPROVALS: 1
+      GITHUB_TOKEN:
+      ADD_LABEL: documentation
+    
